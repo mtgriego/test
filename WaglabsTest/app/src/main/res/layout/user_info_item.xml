@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/user_gravitar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/user_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/user_gravitar"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/user_reputation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@id/user_gravitar"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gold_circle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/user_reputation"
+        android:background="@drawable/gold_circle" />
+
+    <TextView
+        android:id="@+id/user_gold_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/gold_circle" />
+
+    <ImageView
+        android:id="@+id/silver_circle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/user_gold_count"
+        android:background="@drawable/silver_circle" />
+
+    <TextView
+        android:id="@+id/user_silver_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/silver_circle" />
+
+    <ImageView
+        android:id="@+id/bronze_circle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/user_silver_count"
+        android:background="@drawable/bronze_circle" />
+
+    <TextView
+        android:id="@+id/user_bronze_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/bronze_circle" />
+
+</RelativeLayout>
